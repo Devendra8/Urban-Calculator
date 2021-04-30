@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/calorie.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl" >Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+  <div class="container-main">
+      <h2 class="bmi">Ideal Weight Calculator</h2>
+      <p>The Ideal Weight Calculator can be used
+           to calculate healthy weight and corresponding weight status while taking age and gender into consideration.</p>
+
+    <div class="container">       
+      <div class="container2">
+        <p class="title">Ideal Weight Calculator</p> 
+        <div class="wrapper">
+          <div class="height-wrap">
+            <span class="icon-wrap">
+            <i class="fas fa-ruler-vertical icon"></i>
+           </span>
+            <input type="text" placeholder="Height" id="Height" class="input" />
+            <select id="heightmetric">
+              <option id="cm" value="cm" selected >Cm</option>
+              <option id="m" value="m">M</option>
+            </select>
+          </div>
+          <div class="height-wrap">
+           <span class="icon-wrap">
+           <i class="fas fa-weight icon"></i>
+          </span>
+           <input type="text" placeholder="Age" class="input" id="age" />
+         </div>
+         <div class="height-wrap">
+          <h4 class="input1">Gender</h4>
+          <select id="gender" class="select1">
+           <option id="male" value="male" selected >Male</option>
+           <option id="female" value="female">Female</option>
+         </select>
+       </div>
+         <button class="btn" onclick="BMI()">Calculate</button>
+        
+         
+        
+     </div>
+      </div>
+
+     <div class="container3">
+        <p class="title-ideal">Result</p>
+        <div class="result-container" id="result">
+
+        </div>
+        <h3 id="BMI" class="BMI"></h3>
+        <h3 id="range" class="range"></h3>
+
+        <h3 id="robinson" class="robinson " ></h3>
+        <h3 id="miller" class="miller"></h3>
+        <h3 id="devine" class="devine"></h3>
+        <h3 id="hamwi" class="hamwi"></h3>
+     
+     </div>
+    </div> 
+
+    <div class="container4">
+        <h3>Ideal Weight for Adults</h3>
+        <p>This is the World Health Organization's (WHO) 
+            recommended ideal body weight based on ideal 
+            values for adults. 
+            It is used for both men and women, age 18 or older.</p>
+        <img class="ideal-weight-chart" src="img/idealweight.jpg">
+
+        <h3>Ideal Weight for Children</h3>
+        <p>The Ideal Wight categroization for children under 2 years is unique. 
+            There is a different methodology for minors when it comes to calculate Ideal Weight. 
+            This is due to children’s growth and metabolism changes as they get older.
+             The Ideal Weight categorization for children and teens between age 0 and 2 can be seen in the table that is below:</p>
+        <img class="ideal-weight-chart-children" src="img/idealweightchildren.jpg">
+    </div>
+</div>
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+   
+
+
+    <script>
+      
+        function BMI(){
+       
+       
+         //reading values
+         const height = document.getElementById("Height").value;
+         const weight = document.getElementById("age").value;
+         var cm = document.getElementById("cm").selected;
+         var m =  document.getElementById("m").selected;
+         var male =document.getElementById("male").selected;
+         var female =document.getElementById("female").selected;
+       //BMI INDEX COMPUTATION  
+       if(male && cm){
+        const x = height - 152.4;
+        const inch = x/2.54;
+
+        const robinson = 52 + 1.9*inch;
+        const miller = 56.2 + 1.41*inch;
+        const devine = 50 + 2.3*inch;
+        const hamwi = 48 + 2.7*inch;
+
+        const layout = `
+  
+    <div class="result-content2">
+        <ul>
+            <li>
+            &bull; Robinson Index : <strong> ${robinson.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Miller Index : <strong> ${miller.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Devine Index :<strong> ${devine.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Hamwi Index :<strong> ${hamwi.toFixed(1)} Kg</strong>
+            </li>
+        </ul>
+    </div>
+    `;
+
+  const result = document.getElementById("result");
+  result.innerHTML = layout;
+  result.scrollIntoView();
+
+       }else if(male && m){
+        const cm = height*100;
+        const x = cm - 152.4;
+        const inch = x/2.54;
+
+        const robinson = 52 + 1.9*inch;
+        const miller = 56.2 + 1.41*inch;
+        const devine = 50 + 2.3*inch;
+        const hamwi = 48 + 2.7*inch;
+     
+        
+        const layout = `
+  
+    <div class="result-content2">
+        <ul>
+            <li>
+            &bull; Robinson Index : <strong> ${robinson.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Miller Index : <strong> ${miller.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Devine Index :<strong> ${devine.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Hamwi Index :<strong> ${hamwi.toFixed(1)} Kg</strong>
+            </li>
+        </ul>
+    </div>
+    `;
+
+  const result = document.getElementById("result");
+  result.innerHTML = layout;
+  result.scrollIntoView();
+       }else if(female && cm){
+        const x = height - 152.4;
+        const inch = x/2.54;
+
+        const robinson = 49 + 1.7*inch;
+        const miller = 53.1 + 1.36*inch;
+        const devine = 45.5 + 2.3*inch;
+        const hamwi = 45.5 + 2.2*inch;
+
+        
+        const layout = `
+  
+    <div class="result-content2">
+        <ul>
+            <li>
+            &bull; Robinson Index : <strong> ${robinson.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Miller Index : <strong> ${miller.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Devine Index :<strong> ${devine.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Hamwi Index :<strong> ${hamwi.toFixed(1)} Kg</strong>
+            </li>
+        </ul>
+    </div>
+    `;
+
+  const result = document.getElementById("result");
+  result.innerHTML = layout;
+  result.scrollIntoView();
+       }else if(female && m){
+        const cm = height*100;
+        const x = cm - 152.4;
+        const inch = x/2.54;
+
+        const robinson = 49 + 1.7*inch;
+        const miller = 53.1 + 1.36*inch;
+        const devine = 45.5 + 2.3*inch;
+        const hamwi = 45.5 + 2.2*inch;
+        
+        
+        const layout = `
+  
+    <div class="result-content2">
+        <ul>
+            <li>
+            &bull; Robinson Index : <strong> ${robinson.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Miller Index : <strong> ${miller.toFixed(1)} Kg</strong>
+            </li>
+            <li>
+            &bull; Devine Index :<strong> ${devine.toFixed(1)} Kg</strong>.
+            </li>
+            <li>
+            &bull; Hamwi Index :<strong> ${hamwi.toFixed(1)} Kg</strong>
+            </li>
+        </ul>
+    </div>
+    `;
+
+  const result = document.getElementById("result");
+  result.innerHTML = layout;
+  result.scrollIntoView();
+      }
+       //extra
+        if(cm && kg ){
+          const x = height/100;
+          const result = (weight/(x*x));
+          
+       
+        }
+        else if(cm && lbs ){
+          const x = height/100;
+          const w = weight/2.2;
+          const result = (w/ (x*x));
+          document.getElementById("BMI").innerHTML = "BMI Index : " + result.toFixed(1);
+       
+        }
+        else if(m && kg){
+       
+          const result = (weight/(height*height));
+          document.getElementById("BMI").innerHTML = "BMI Index : " + result.toFixed(1);
+       
+        }else if(m && lbs){
+       
+          const w = weight/2.2;
+          const result = (w/(height*height));
+          document.getElementById("BMI").innerHTML = "BMI Index : "  + result.toFixed(1);
+       
+        }
+       
+         
+         
+         
+          //Body Range Computation
+         //conditions
+         if(result<18.5){
+            document.getElementById("range").innerHTML = "Body Range : UnderWeight ";
+         }else
+         if(result>18.5 && result<25){
+           document.getElementById("range").innerHTML = "Body Range : Normal ";
+         }else
+         if(result>24.9 && result<30){
+           document.getElementById("range").innerHTML = "Body Range : OverWeight ";
+         }else
+         if(result>29.9 && result<35){
+           document.getElementById("range").innerHTML = "Body Range : Obese Type I ";
+         }else
+         if(result>34.9 && result<40){
+            document.getElementById("range").innerHTML = "Body Range : Obese Type II ";
+         }else
+         if(result>39.9){
+           document.getElementById("range").innerHTML = "Body Range : Obese Type III ";
+         }
+       
+       
+       
+         }
+       </script>
+</body>
+</html>

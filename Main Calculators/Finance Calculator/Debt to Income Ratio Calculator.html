@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl" >Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+    <div class="container-main">
+      <h2 class="bmi">Debt to Income Ratio Calculator</h2>
+      <p>The Debt to Income Ratio Calculator can be used
+           to calculate BMI value and corresponding weight status while taking age into consideration.</p>
+           <div class="container">       
+            <div class="container2-debt">
+              <p class="title"><b>Debt to Income Ratio Calculator</b></p> 
+              <div class="wrapper">
+                <div class="height-wrap-debt">
+                    <h2>Salary & Earned Income</h2>
+                    <input type="text" placeholder="Salary" id="salary" class="input" />
+                    <select id="metric">
+                      <option id="monthly" value="monthly" selected >Monthly</option>
+                      <option id="yearly" value="yearly">Yearly</option>
+                    </select>
+                  </div>
+
+                  <div class="height-wrap-debt">
+                    <h2>Pension & Social Security	</h2>
+                    <input type="text" placeholder="Pension" id="pension" class="input" />
+                    <select id="metric">
+                      <option id="monthly" value="monthly" selected >Monthly</option>
+                      <option id="yearly" value="yearly">Yearly</option>
+                    </select>
+                  </div>
+
+                  <div class="height-wrap-debt">
+                    <h2>Investment & Savings		</h2>
+                    <input type="text" placeholder="Savings" id="saving" class="input" />
+                    <select id="metric">
+                      <option id="monthly" value="monthly" selected >Monthly</option>
+                      <option id="yearly" value="yearly">Yearly</option>
+                    </select>
+                  </div>
+
+                  <div class="height-wrap-debt">
+                    <h2>Other Income		</h2>
+                    <input type="text" placeholder="income" id="income" class="input" />
+                    <select id="metric">
+                      <option id="monthly" value="monthly" selected >Monthly</option>
+                      <option id="yearly" value="yearly">Yearly</option>
+                    </select>
+                  </div>
+
+              <!--  Debt expenses-->
+              <h2>Debt Expenses</h2>
+              <div class="height-wrap-debt">
+                <h2>Rental Cost		</h2>
+                <input type="text" placeholder="rental" id="rental" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>Mortgage		</h2>
+                <input type="text" placeholder="mortgage" id="mortgage" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>Property Tax		</h2>
+                <input type="text" placeholder="Property" id="property" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>HOA Fees		</h2>
+                <input type="text" placeholder="HOA" id="hoa" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>Homeowner Insurance		</h2>
+                <input type="text" placeholder="home" id="home" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>Credit Cards		</h2>
+                <input type="text" placeholder="credit" id="credit" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>Student Loan		</h2>
+                <input type="text" placeholder="student" id="student" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>Auto Loan		</h2>
+                <input type="text" placeholder="auto" id="auto" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+              <div class="height-wrap-debt">
+                <h2>Other Loans and Liabilities		</h2>
+                <input type="text" placeholder="other" id="other" class="input" />
+                <select id="metric">
+                  <option id="monthly" value="monthly" selected >Monthly</option>
+                  <option id="yearly" value="yearly">Yearly</option>
+                </select>
+              </div>
+
+
+                  <div class="form-group-btn">
+                    <button class="btn-submit" type="submit">Calculate</button>
+                    <button class="btn-reset" type="reset">Clear</button>
+                </div>
+
+              </div>
+            </div>
+
+     <div class="container3">
+        <p class="title-bmi">Result</p> 
+        <h3 id="BMI" class="BMI"></h3>
+        <h3 id="range" class="range"></h3>
+      
+     </div>
+    </div> 
+
+    <div class="container4">
+        <h3>BMI Table for Adults</h3>
+        <p>This is the World Health Organization's (WHO) 
+            recommended body weight based on BMI values for adults. 
+            It is used for both men and women, age 18 or older.</p>
+        <img class="bmichart" src="img/BMI-Chart.webp">
+
+        <h3>BMI Table for children</h3>
+        <p>The BMI categroization for children under 18 is unique. 
+            There is a different methodology for minors when it comes to calculate Body Mass Index. 
+            This is due to children’s growth and metabolism changes as they get older.
+             The BMI categorization for children and teens between age 2 and 18 can be seen in the table that is below:</p>
+        <img class="bmichart" src="img/BMI-Children-Chart.webp">
+    </div>
+  </div>
+
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+   
+</body>
+</html>
