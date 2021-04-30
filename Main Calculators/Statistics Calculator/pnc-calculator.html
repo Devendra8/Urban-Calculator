@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Urban Calculator</title>
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl" >Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+
+ <h2 class="area">Permutation and Combination Calculator</h2>
+ <p>The Permutation and Combination Calculator can be used
+      to calculate square value of any Number.</p>
+
+   <div class="container">   
+              <div class="container2-rect">
+                <p class="title"><b>Permutation and Combination Calculator</b></p> 
+                <div class="wrapper">
+                  <form id="form">
+                  <div class="height-wrap-pnc">
+                      <h2>Total Amount in a Set (n) : </h2>
+                      <input type="text" placeholder="Number" id="number_n" class="input" />
+                    </div>
+                    <div class="height-wrap-pnc">
+                        <h2>Amount in each Sub-Set (r) : </h2>
+                        <input type="text" placeholder="Number" id="number_r" class="input" />
+                      </div>
+                    <div class="form-group-btn">
+                        <button class="btn-submit" id="submit" type="submit" >Calculate</button>
+                        <button class="btn-reset" id="reset" type="reset">Clear</button>
+                    </div>
+                    <p id="ans"></p>
+                  </form>
+                </div>
+              </div>
+              <div class="container3">
+                <p class="title-bmi">Result</p> 
+                <h3 id="BMI" class="BMI">Permutation : <strong>NA</strong></h3>
+                <h3 id="range" class="range"></h3>
+              
+             </div>
+
+    </div>          
+    <footer >   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/about-us.html#terms">terms of use</a> | 
+          <a href="/about-us.html#privacy">privacy policy</a> &nbsp;  © 2008 - 2021 
+          <a href="//www.calculator.net">calculator.net</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+    <script>
+      
+const form = document.getElementById("form");
+form.addEventListener("submit", handleSubmit);
+form.addEventListener("reset", handleReset);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const number_n = getinputnumbervalue("number_n");
+  const number_r = getinputnumbervalue("number_r");
+  if(number_n > number_r){
+    if (validateForm()) {
+    getResult(number_n , number_r);
+  }
+  } else if(number_n < number_r){
+    alert ("r should be less than n");
+  }
+
+  
+}
+
+
+function getinputnumbervalue(id){
+
+  return document.getElementById(id).value;
+}
+
+function validateForm() {
+  // TODO
+ 
+    return true;
+}
+
+function getResult(number_n, number_r){
+  
+  let number_nfact = 1;
+    for (i = 1; i <= number_n; i++) {
+        number_nfact *= i;
+    }
+  
+  const number_f = number_n - number_r;
+  let number_rfact = 1;
+    for (i = 1; i <= number_f; i++) {
+        number_rfact *= i;
+    }
+
+  let number_fact = 1;
+  for (i = 1; i <= number_r; i++) {
+        number_fact *= i;
+    }
+     
+  const result = number_nfact/number_rfact;
+  const result1 = number_nfact/(number_fact * number_rfact);
+  
+  
+  const layout =  `
+    
+    <div class="result-content">
+      Permutations, nPr = (${number_n}!/(${number_n} - ${number_r})!)<br> = <strong> ${result}</strong> <br>
+      Combinations, nCr =  (${number_n}!/${number_r}! * (${number_n } - ${number_r})!) <br> = <strong> ${result1}</strong>
+    </div> 
+    `;
+
+
+  document.getElementById("BMI").innerHTML =  layout;
+}
+
+function handleReset() {
+  const result1 = document.getElementById("BMI");
+  result1.innerHTML = "";
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sports.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+
+    <script src="/js/search.js"></script>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Urban Calculator</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+            <a href ="/index.html" class="mr-5">Home</a>
+            <a class="mr-5 " href="/main-calculators.html">Main</a>
+            <a class="mr-5 " href="/math-calculators.html">Math</a>
+            <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+          </nav>
+          <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
+ 
+
+        </div>
+     
+      </header>
+
+      <div class="container-main"> 
+      <h2 class="bmi">Batting Average Calculator - Cricket</h2>
+      <p>Batting Average is a statistics data used to view or analysize the cricket player’s overall performance in a cricket match. Its is calculated by dividing total runs scored by a player with total times out in match.</p>
+
+    <div class="container">       
+      <div class="container2-ERA">
+        <p class="title">Batting Average Calculator - Cricket</p> 
+        <div class="wrapper">
+            <form id="form">
+                <div class="form-group">
+                  <label for="age">Total runs scored : :		</label>
+                  <input type="number" placeholder="" id="runs" required />
+                </div>
+                <div class="form-group">
+                  <label for="weight">Number of times out :	</label>
+                  <input type="number" placeholder="" id="wicket" required />
+
+                  
+                </div>
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit">Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+              </form>
+         
+         
+         
+        </div>
+     </div>
+
+     <div class="container5">
+     <div class="container3">
+        <p class="title-result">Batting Average :</p> 
+        <div class="result-container" id="result">
+
+        </div>
+        <h3 id="BMI" class="BMI"><strong>0.00</strong></h3>
+        <h3 id="range" class="range"></h3>
+     </div>
+
+     <div class="container6">
+       <!--     ADVERTISEMENT-->
+
+     </div>
+    </div>
+    </div> 
+
+    
+    <div class="container4">
+        <h3>What is Cricket Batting Average?</h3>
+        <p>Batting Average is the ratio of a player’s number of runs to the number of times they have been out.
+
+            It is considered a good metric for a player’s skill as a batsman.</p>
+
+        <h3>What is a good Cricket batting average?</h3>
+        <p>On average, a batting average of 43 – 45 can be considered a good batting average.</p>
+
+        <h3>How do you calculate an Batting Average?</h3>
+        <p>Batting Average in Cricket = Runs Scored / Times out</p>
+
+        <h3>Example of Batting Average?</h3>
+        <p>A batter scores at bat 522 times and is out 27 times in that time.
+<br>
+            522 ÷ 27 = 19.33.
+    <br>        
+            Therefore, the player’s batting average is 19.33</p>
+
+        <h3></h3>
+        <p></p>
+          
+        <h3>  </h3>
+        <p> </p>   
+    </div>
+
+    <div class="container7"></div>
+</div>
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+
+<script src="js/script.js"></script>    
+</body>
+</html>
