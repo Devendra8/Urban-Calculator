@@ -56,3 +56,24 @@ li:hover{
      transition: transform 150ms;
      cursor: pointer;
 }
+
+
+@media screen and (max-width:600px){
+    .main-heading{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-heading2{
+        margin-right: 5px;
+        margin-left: 15px;
+    }
+
+    .main-ul{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 5px;
+    
+    }
+}
