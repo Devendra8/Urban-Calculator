@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-calculator.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/footer1.css">
+    <script src="/js/search.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/search.js"></script>
+    <title>Urban Calculator</title>
+</head>
+<body>
+    
+    
+    <header class="text-gray-600 body-font">
+        <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl" >Urban Calculator</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+            <a href ="/index.html" class="mr-5">Home</a>
+            <a class="mr-5 " href="/main-calculators.html">Main</a>
+            <a class="mr-5 " href="/math-calculators.html">Math</a>
+            <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+          </nav>
+          <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
+ 
+
+        </div>
+     
+      </header>
+
+  <main>    
+    <div class="container">
+    <div class="container-calc">
+     
+    <form class="calculator" name="calc">
+        <input class="value" type="text" name="txt" readonly="">
+        <span class="num clear" onclick="document.calc.txt.value =''">c</span>
+        <span class="num" onclick="document.calc.txt.value +='/'">/</span>
+        <span class="num" onclick="document.calc.txt.value +='*'">*</span>
+        <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+        <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+        <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+        <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+        <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+        <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+        <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+        <span class="num classplus" onclick="document.calc.txt.value +='+'">+</span>
+        <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+        <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+        <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+        <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+        <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+        <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+        <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+    </form>
+    </div>
+
+        <div class="container2">
+            <div class="inside-div">
+                <h1 class="main-heading2"> Main Calculators</h1>
+                <ul class="main-ul">
+                    <a href="Finance-calculators.html"><li>Finance</li></a>
+                    <a href="fitness-and-health-calculator.html"><li>Fitness and Health</li></a>
+                    <a href="investment-calculators.html"> <li>Investment</li></a>
+                    <a href="sports-calculators.html">   <li>Sports</li></a>
+                    <a href="statistic-calculators.html"><li>Statistics</li></a>
+                    <a href="/construction-calculators.html"><li>Construction</li></a>
+                    <a href="/science-calculators.html"><li>Science</li></a>
+                </ul>
+            </div>
+
+            <div class="inside-div">
+                <h1 class="main-heading2"> Math Calculators</h1>
+                <ul class="main-ul">
+                    <a href="/Math Calculators/circle-calculator.html"> <li>Circle</li></a>
+                    <a href="/Math Calculators/square-calculator.html"><li>Square</li></a>
+                <!--    <a href=""> <li>   </li></a>
+                    -->
+                    <a href ="/math-calculators.html"><li>More</li></a>
+                </ul>
+            </div>
+
+            <div class="inside-div">
+                <h1 class="main-heading2"> Other Calculators</h1>
+                <ul class="main-ul">
+                 <!--  <a href=""><li>Age Calculator</li></a>
+                  -->   <a href="/other-calculators.html"><li>More</li></a>
+                </ul>
+            </div>
+
+
+        </div>
+        
+    </div> 
+
+</main>
+<footer>   
+    <div id="footer">
+        <div id="footerin">
+            <div id="footernav">
+                <a href="/about-us.html">about us</a> | 
+        <a href="/sitemap.html">sitemap</a> | 
+        <a href="/terms-of-use.html">terms of use</a> | 
+        <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+        <a href="/index.html">urbanCalculator.com</a>
+    </div>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>
