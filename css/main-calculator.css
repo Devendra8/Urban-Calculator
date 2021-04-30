@@ -59,9 +59,9 @@ li:hover{
 
 
 @media screen and (max-width:600px){
-    .main-heading{
-        margin-left: 8px;
-        margin-right: 8px;
+    .heading{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .main-heading2{
