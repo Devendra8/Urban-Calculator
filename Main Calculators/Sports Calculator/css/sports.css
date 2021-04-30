@@ -269,8 +269,30 @@ img{
     .container3{
         width:260px;
     }
+    
+        p{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .bmi{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    h2{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    h3{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
 }
 
 
-}    
+ 
 
