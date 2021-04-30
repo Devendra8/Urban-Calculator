@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/area.css">
+        <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>All in One Calculator</title>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">All in One Calculator</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+            <a href ="index.html" class="mr-5">Home</a>
+            <a class="mr-5 ">About</a>
+            <a class="mr-5 ">Privacy</a>
+            <a href ="contactuss.html" class="mr-5 ">Contact Us</a> 
+          </nav>
+        </div>
+      </header>
+
+      <h2 class="area">Area Calculator</h2>
+      <p>The Area Calculator can be used
+           to calculate area value of different polygons and while taking length, width and breadth into consideration.</p>
+
+        <div class="container">       
+            <div class="container2-rect">
+              <p class="title"><b>Rectangle Area Calculator</b></p> 
+              <div class="wrapper">
+                  <form>
+                <div class="height-wrap">
+                    <span class="icon-wrap">
+                    <i class="fas fa-ruler-vertical icon"></i>
+                   </span>
+                    <h2>Length(l)</h2>
+                    <input type="text" placeholder="Length" id="lengthr" class="input" />
+                    <select id="metricr1">
+                      <option id="ft" value="ft" selected >feet</option>
+                      <option id="in" value="in">inches</option>
+                      <option id="y" value="y">yards</option>
+                      <option id="cm" value="cm">CentiMeter</option>
+                      <option id="m" value="m">Meter</option>
+                      <option id="km" value="km">KiloMeter</option>
+                    </select>
+                  </div>
+
+                  <div class="height-wrap">
+                    <span class="icon-wrap">
+                    <i class="fas fa-ruler-vertical icon"></i>
+                   </span>
+                    <h2>Width(W)</h2>
+                    <input type="text" placeholder="Width" id="widthr" class="input" />
+                    <select id="metricr2">
+                      <option id="ft" value="ft" selected >feet</option>
+                      <option id="in" value="in">inches</option>
+                      <option id="y" value="y">yards</option>
+                      <option id="cm" value="cm">CentiMeter</option>
+                      <option id="m" value="m">Meter</option>
+                      <option id="km" value="km">KiloMeter</option>
+                    </select>
+                  </div>
+                  <div class="form-group-btn">
+                    <button class="btn-submit" type="submit">Calculate</button>
+                    <button class="btn-reset" type="reset">Clear</button>
+                </div>
+            </form>
+              </div>
+            </div>
+            
+            <div class="container2-rect">
+                <p class="title1"><b>Triangle Area Calculator</b></p> 
+                <div class="wrapper1">
+                    <form>
+                  <div class="height-wrap1">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Edge 1 (a)	</h2>
+                      <input type="text" placeholder="Edge 1 (a)	" id="edge1t" class="input" />
+                      <select id="metrict1">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+  
+                    <div class="height-wrap1">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Edge 2 (b)	</h2>
+                      <input type="text" placeholder="Edge 2 (b)" id="edge2t" class="input" />
+                      <select id="metrict2">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+
+                    <div class="height-wrap1">
+                        <span class="icon-wrap">
+                        <i class="fas fa-ruler-vertical icon"></i>
+                       </span>
+                        <h2>Edge 3 (c)	</h2>
+                        <input type="text" placeholder="Edge 3 (c)" id="edge3t" class="input" />
+                        <select id="metrict3">
+                          <option id="ft" value="ft" selected >feet</option>
+                          <option id="in" value="in">inches</option>
+                          <option id="y" value="y">yards</option>
+                          <option id="cm" value="cm">CentiMeter</option>
+                          <option id="m" value="m">Meter</option>
+                          <option id="km" value="km">KiloMeter</option>
+                        </select>
+                      </div>
+                      <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Calculate</button>
+                        <button class="btn-reset" type="reset">Clear</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+
+              <div class="container2-rect">
+                <p class="title1"><b>Trapezoid Area Calculator</b></p> 
+                <div class="wrapper1">
+                    <form>
+                  <div class="height-wrap1">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Base 1 (b1)	</h2>
+                      <input type="text" placeholder="Base 1" id="base1" class="input" />
+                      <select id="metrictr1">
+                        <option id="ft" value="ft" selected >feet</option>
+                         <option id="in" value="in">inches</option>
+                         <option id="y" value="y">yards</option>
+                         <option id="cm" value="cm">CentiMeter</option>
+                         <option id="m" value="m">Meter</option>
+                         <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+  
+                    <div class="height-wrap1">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Base 2 (b2)	</h2>
+                      <input type="text" placeholder="Base 2" id="base2" class="input" />
+                      <select id="metrictr2">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+
+                    <div class="height-wrap1">
+                        <span class="icon-wrap">
+                        <i class="fas fa-ruler-vertical icon"></i>
+                       </span>
+                        <h2>Height (h)	</h2>
+                        <input type="text" placeholder="Height" id="Heightt" class="input" />
+                        <select id="metrictr3">
+                          <option id="ft" value="ft" selected >feet</option>
+                          <option id="in" value="in">inches</option>
+                          <option id="y" value="y">yards</option>
+                          <option id="cm" value="cm">CentiMeter</option>
+                          <option id="m" value="m">Meter</option>
+                          <option id="km" value="km">KiloMeter</option>
+                        </select>
+                      </div>
+                      <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Calculate</button>
+                        <button class="btn-reset" type="reset">Clear</button>
+                    </div>
+                </form>
+
+                </div>
+              </div>
+
+              <div class="container2-rect">
+                <p class="title"><b>Circle Area Calculator</b></p> 
+                <div class="wrapper">
+                    <form>
+                  <div class="height-wrap">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Radius(r)</h2>
+                      <input type="text" placeholder="Radius" id="radiusc" class="input" />
+                      <select id="metricc1">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+                    <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Calculate</button>
+                        <button class="btn-reset" type="reset">Clear</button>
+                    </div>
+
+                </div>
+              </div>
+
+              <div class="container2-rect">
+                <p class="title"><b>Sector Area Calculator</b></p> 
+                <div class="wrapper">
+                  <div class="height-wrap">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Radius (r)</h2>
+                      <input type="text" placeholder="Radius" id="radiuss" class="input" />
+                      <select id="metrics1">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+  
+                    <div class="height-wrap">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Angle(A)</h2>
+                      <input type="text" placeholder="Angle" id="Angles" class="input" />
+                      <select id="metrics2">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+                    <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Calculate</button>
+                        <button class="btn-reset" type="reset">Clear</button>
+                    </div>
+                </form>
+
+                </div>
+              </div>
+
+              <div class="container2-rect">
+                <p class="title"><b>Ecllipse Area Calculator</b></p> 
+                <div class="wrapper">
+                    <form>
+                  <div class="height-wrap">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Semi-major Axes (a)</h2>
+                      <input type="text" placeholder="Axes (a)" id="semia" class="input" />
+                      <select id="metrice1">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+  
+                    <div class="height-wrap">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Semi-major Axes (b)</h2>
+                      <input type="text" placeholder="Axes (b)" id="semib" class="input" />
+                      <select id="metrice2">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+
+                      </select>
+                    </div>
+                    <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Calculate</button>
+                        <button class="btn-reset" type="reset">Clear</button>
+                    </div>
+                </form>
+
+                </div>
+              </div>
+
+              <div class="container2-rect">
+                <p class="title"><b>Parallelogram Area Calculator</b></p> 
+                <div class="wrapper">
+                    <form>
+                  <div class="height-wrap">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Base(b)</h2>
+                      <input type="text" placeholder="Base" id="Basep" class="input" />
+                      <select id="metricp1">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+  
+                    <div class="height-wrap">
+                      <span class="icon-wrap">
+                      <i class="fas fa-ruler-vertical icon"></i>
+                     </span>
+                      <h2>Height(h)</h2>
+                      <input type="text" placeholder="Height" id="Heightp" class="input" />
+                      <select id="metricp2">
+                        <option id="ft" value="ft" selected >feet</option>
+                        <option id="in" value="in">inches</option>
+                        <option id="y" value="y">yards</option>
+                        <option id="cm" value="cm">CentiMeter</option>
+                        <option id="m" value="m">Meter</option>
+                        <option id="km" value="km">KiloMeter</option>
+                      </select>
+                    </div>
+                    <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Calculate</button>
+                        <button class="btn-reset" type="reset">Clear</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+        </div>
+        
+        
+
+
+    <script src="js/area.js"></script>
+</body>
+</html>
