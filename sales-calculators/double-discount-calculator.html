@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sales.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+
+    <script src="/js/search.js"></script>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Urban Calculator</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+            <a href ="/index.html" class="mr-5">Home</a>
+            <a class="mr-5 " href="/main-calculators.html">Main</a>
+            <a class="mr-5 " href="/math-calculators.html">Math</a>
+            <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+          </nav>
+          <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
+ 
+
+        </div>
+     
+      </header>
+   <div class="container-main">   
+      <h2 class="bmi">Double Discount Calculator</h2>
+      <p>The Double Discount Calculator is used to calculate the final price after giving discount on discount on initial price. </p>
+
+    <div class="container">       
+      <div class="container2-ERA">
+        <p class="title">Double Discount Calculator</p> 
+        <div class="wrapper">
+            <form id="form">
+                <div class="form-group">
+                  <label for="age">Initial Price :		</label>
+                  <input type="text" placeholder="" id="ip" required />
+                </div>
+                <div class="form-group">
+                  <label for="weight">1st discount :		</label>
+                  <input type="text" placeholder="%" id="1d" required />
+                </div>
+                <div class="form-group">
+                    <label for="age">2nd disccount :		</label>
+                    <input type="text" placeholder="%" id="2d" required />
+                  </div>
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit">Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+         <!--       <div class="form-group">
+                    <label for="age">Final Price :		</label>
+                    <input type="number" placeholder="" id="runs" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="age">Savings :		</label>
+                    <input type="number" placeholder="" id="runs" required />
+                  </div>
+             -->
+                </form>
+         
+         
+         
+        </div>
+     </div>
+
+     <div class="container5">
+     <div class="container3">
+        <p class="title-result">Final Price and Savings :</p> 
+        <div class="result-container" id="result">
+          <h4 id="BMI" class="BMI"><strong>0.00</strong></h4>
+        </div>
+    
+        <h3 id="range" class="range"></h3>
+     </div>
+
+     <div class="container6">
+       <!--     ADVERTISEMENT-->
+
+     </div>
+    </div>
+    </div> 
+
+
+    <div class="container4">
+        <h3> What is a double discount? </h3>
+        <p> Double dicount is the two time discount given on any price one by one which effectively create a total discount.  </p>
+
+        <h3> What is the total discount of two successive 20% and 15% discount? </h3>
+        <p> S.D. = 20 + 15 - (20*15/100) = 32% </p>
+
+        <h3>What is the formula for successive discount?   </h3>
+        <p>Suppose, two discount a% and b% <br>
+        then,<br>
+         successive discount = a + b -(a*b/100)   </p>
+
+        <h3>   </h3>
+        <p>   </p>
+    <!--
+        <h3></h3>
+        <p></p>
+          
+        <h3>  </h3>
+        <p> </p>   
+        -->
+    </div>
+
+    <div class="container7"></div>
+  </div>
+
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+
+  <Script>
+  
+  const form = document.getElementById("form");
+    form.addEventListener("submit", handleSubmit);
+    form.addEventListener("reset", handleReset);
+    
+    function handleSubmit(event) {
+        event.preventDefault();
+        const ip = getinputnumbervalue("ip");
+        const d1 = getinputnumbervalue("1d");
+        const d2 = getinputnumbervalue("2d");
+    
+        getResult(ip, d1, d2);
+    
+    }
+    
+    function getinputnumbervalue(id){
+    
+        return document.getElementById(id).value;
+    }
+    
+    function validateForm() {
+        // TODO
+        return true;
+    }
+    
+    
+    function getResult(ip, d1, d2){
+        const ab = ip - (ip*(d1/100));
+        const peratio = ab - (ab*(d2/100));
+     
+        
+        
+        const layout = `
+          
+          <div class="result-content2">
+                  <strong> ${peratio.toFixed(2)}</strong><br>
+          </div>
+          `;
+      
+      
+        document.getElementById("BMI").innerHTML =  layout;
+      }
+    
+    
+    function handleReset() {
+        const result1 = document.getElementById("BMI");
+        result1.innerHTML = "";
+    } 
+    
+    </Script>
+</body>
+</html>
