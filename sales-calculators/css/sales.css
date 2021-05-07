@@ -27,11 +27,30 @@ body{
     margin-top: 40px;
 }
 
+
 p{
     font-size: 17px;
     font-family: sans-serif;
     margin-left: 55px;
-    padding-top: 8px;
+    padding-top: 1px;
+}
+
+.faq{
+    
+    color: rgb(0,0, 0);
+    margin-left: 55px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+h2{
+    
+    color: rgb(0,0, 0);
+    margin-left: 55px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 h3{
@@ -39,7 +58,7 @@ h3{
     color: rgb(0,0, 0);
     margin-left: 55px;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 25px;
 }
 
