@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="css/dicount.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+
+
+  <div class="container-main">  
+      <h2 class="bmi">EBIT Calculator</h2>
+      <p>The EBIT Calculator can be used
+        to calculate ebit value for any company if you know the values of revenue and operational Expenses.</p>
+
+    <div class="container">       
+      <div class="container2-percentoff">
+        <p class="title">EBIT Calculator</p> 
+        <div class="wrapper">
+            <form id="form">
+                <div class="form-group">
+                  <label for="age">Revenue :		</label>
+                  <input type="text" id="pps" required />
+                </div>
+                <div class="form-group">
+                  <label for="weight">Operational Expenses :	</label>
+                  <input type="text" aria-label="Price per share" id="eps" required />
+                </div>
+         
+      
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit">Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="height">EBIT :		</label>
+                  <input type="text" aria id="pe"  />
+                </div>
+              </form>
+         
+         
+         
+        </div>
+     </div>
+<!--
+     <div class="container3-fat">
+        <p class="title-calorie">Result</p> 
+        <div class="result-container" id="result">
+
+        </div>
+        <h3 id="BMI" class="BMI"></h3>
+        <h3 id="range" class="range"></h3>
+      
+     </div>
+-->
+     <div class="container6">
+      <h1 class="heading-1">What is EBIT?   </h1>
+      <p class="paragraph-1">Earnings before interest and taxes measures the profit a company generates from its operations making it synonymous with operating profit. By ignoring taxes and interest expense , EBIT focuses solely on a company's ability to get earnings from operations, ignoring variables like the tax burden and capital structure.
+      </p>
+
+      <h1 class="heading-2">EBIT formula</h1>
+      <p class="paragraph-2">EBIT can be calculated as revenue minus expenses excluding tax and interest.<br>         
+        <br>The EBIT Value is calculated as : <br>
+        &nbsp; &nbsp; &nbsp; EBIT = Revenue − COGS − Operating Expenses
+                      <br>   </p>   
+
+
+      <h1 class="heading-3">How to Calculate EBIT</h1>
+      <p class="paragraph-3">      <br>
+       <br>   <br>
+       <br>
+       
+      </p>       
+
+                  <h1 class="heading-4">Usage of EBIT value</h1>
+                  <p class="paragraph-4">
+                    &bull; Also, if a company has non-operating income, such as income from investments, this may be (but does not have to be) included. In this case, EBIT is distinct from operating income, which, as the name implies, does not include non-operating income.  <br>
+                    <br>
+                    &bull; Another way to calculate EBIT is by taking the net income figure (profit) from the income statement and adding the income tax expense and interest expense back into net income.
+                  </p>               
+
+</div>
+<div class="container-last">
+  <h1 class="heading-5"></h1>
+  <p class="paragraph-5"> </p>
+  
+  <h1 class="heading-5">  </h1>
+  <p class="paragraph-5"> <br>
+                                           </p>
+  </div>
+    </div> 
+  </div>
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+
+    <script src="js/ebit.js"></script>
+</body>
+</html>

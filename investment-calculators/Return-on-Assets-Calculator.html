@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dicount.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+
+  <div class="container-main">     
+      <h2 class="bmi">Return on Assets Calculator</h2>
+      <p>The Return on Assets Calculator can be used
+        to calculate ROA for any company if you know the values of Net income and total assets.</p>
+
+    <div class="container">       
+      <div class="container2-percentoff">
+        <p class="title">Return on Assets Calculator</p> 
+        <div class="wrapper">
+            <form id="form">
+                <div class="form-group">
+                  <label for="age">Net Income :		</label>
+                  <input type="text" id="pps" required />
+                </div>
+                <div class="form-group">
+                  <label for="weight">Total Assets :		</label>
+                  <input type="text" aria-label="Price per share" id="eps" required />
+                </div>
+      
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit">Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="height">Return on Assets :		</label>
+                  <input type="text" aria id="pe"  />
+                </div>
+              </form>
+         
+         
+         
+        </div>
+     </div>
+<!--
+     <div class="container3-fat">
+        <p class="title-calorie">Result</p> 
+        <div class="result-container" id="result">
+
+        </div>
+        <h3 id="BMI" class="BMI"></h3>
+        <h3 id="range" class="range"></h3>
+      
+     </div>
+-->
+     
+     <div class="container6">
+      <h1 class="heading-1">What is Return on assets?  </h1>
+      <p class="paragraph-1">Return on assets (ROA) is an indicator of how profitable a corporation is relative to its total assets. ROA gives a manager, investor, or analyst a thought on how efficient a company's management is at using its assets to get earnings.
+      </p>
+
+      <h1 class="heading-2">Return on assets formula</h1>
+      <p class="paragraph-2">ROA is calculated by dividing a company’s net by total assets. As a formula, it might be expressed as:
+        <br>
+                      <br> ROA = Net Income/Total assets  </p>   
+
+
+      <h1 class="heading-3">How do you calculate ROA?</h1>
+      <p class="paragraph-3">      <br>
+       <br> Then Return on assets value is calculated as:  <br>
+       <br>
+       
+      </p>       
+
+      <h1 class="heading-4">Usage of Return on assets</h1>
+        <p class="paragraph-4">
+              &bull; ROA is most useful for comparing companies in the same industry, as different industries use assets differently.   <br>
+                        <br>
+                    &bull;
+        </p>               
+
+</div>
+
+<div class="container-last">
+  <h1 class="heading-5">What's a good Return on assets value?</h1>
+  <p class="paragraph-5">The return on assets (ROA) shows the percentage of how profitable a company's assets are in generating revenue. ROAs over 5% are generally considered good. </p>
+  
+  <h1 class="heading-5">Is ROI and ROA the same thing?  </h1>
+  <p class="paragraph-5">ROA indicates how efficiently your company generates income using its assets. The assets and profitability of businesses in your industry might be irrelevant to other industries, so cross-industry comparisons might not mean much. ROI, on the other hand, measures profitability in terms of investment.
+                                           </p>
+  </div>
+    </div> 
+</div>    
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+
+    <script src="js/roa.js"></script>
+</body>
+</html>

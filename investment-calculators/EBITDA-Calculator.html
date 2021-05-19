@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dicount.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+
+
+  <div class="container-main">  
+      <h2 class="bmi">EBITDA Calculator</h2>
+      <p>The EBITDA Calculator can be used
+        to calculate ebitda value for any company if you know the values of operating profit, Amortization and Depreciation.</p>
+
+    <div class="container">       
+      <div class="container2-percentoff">
+        <p class="title">EBITDA Calculator</p> 
+        <div class="wrapper">
+            <form id="form">
+                <div class="form-group">
+                  <label for="age">Operating Profit :		</label>
+                  <input type="text" id="pps" required  />
+                </div>
+                <div class="form-group">
+                  <label for="weight">Amortization :	</label>
+                  <input type="text" aria-label="Price per share" id="eps" required />
+                </div>
+                <div class="form-group">
+                    <label for="height">Depreciation :		</label>
+                    <input type="text" id="cs" required />
+                  </div>
+                
+      
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit">Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="height">EBITDA :		</label>
+                  <input type="text"  id="pe"  />
+                </div>
+              </form>
+         
+         
+         
+        </div>
+     </div>
+<!--
+     <div class="container3-fat">
+        <p class="title-calorie">Result</p> 
+        <div class="result-container" id="result">
+
+        </div>
+        <h3 id="BMI" class="BMI"></h3>
+        <h3 id="range" class="range"></h3>
+      
+     </div>
+-->
+     
+     <div class="container6">
+      <h1 class="heading-1">What is EBITDA?  </h1>
+      <p class="paragraph-1">EBITDA stands for Earnings Before Interest, Taxes, Depreciation, and Amortization and is a metric used to evaluate a company’s operating performance. It can be seen as a proxy for cash flow from the entire company’s operations. The EBITDA metric may be a variation of operating income (EBIT) that excludes non-operating expenses and certain non-cash expenses. the aim of those deductions is to get rid of the factors that business owners have discretion over, like debt financing, capital structure, methods of depreciation, and taxes (to some extent). It are often wont to showcase a firm’s financial performance without accounting for its capital structure.
+      </p>
+
+      <h1 class="heading-2">EBITDA formula</h1>
+      <p class="paragraph-2">Here is the formula for calculating EBITDA :         <br>
+                      <br>EBITDA = Net Income + Interest + Taxes + Depreciation + Amortization
+                      <br>
+
+
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   OR
+                  
+                      <br>
+                      
+                      EBITDA = Operating Profit + Depreciation + Amortization   </p>   
+
+
+      <h1 class="heading-3">How to Calculate EBITDA</h1>
+      <p class="paragraph-3">      <br>
+       <br>   <br>
+       <br>
+       
+      </p>       
+
+                  <h1 class="heading-4">Usage of EBITDA</h1>
+                  <p class="paragraph-4">
+                    &bull; The EBITDA metric is commonly used as a proxy for cash flow. It can give an analyst a quick estimate of the value of the company, as well as a valuation range by multiplying it by a valuation multiple obtained from equity research reports, industry transactions, or M&A.   <br>
+                    <br>
+                    &bull; When a company is not making a profit, investors can turn to EBITDA to evaluate a company. Many private equity firms use this metric because it is very good for comparing similar companies in the same industry.  Business owners use it to compare their performance against their competitors.
+                  </p>               
+
+</div>
+<div class="container-last">
+  <h1 class="heading-5"></h1>
+  <p class="paragraph-5"> </p>
+  
+  <h1 class="heading-5">  </h1>
+  <p class="paragraph-5"> <br>
+                                           </p>
+  </div>
+    </div> 
+</div>
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+
+    <script src="js/ebitda.js"></script>
+</body>
+</html>

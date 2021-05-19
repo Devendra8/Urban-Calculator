@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dicount.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+
+
+  <div class="container-main">  
+      <h2 class="bmi">Market Capitalization Calculator</h2>
+      <p>The Market Capitalization Calculator can be used
+        to calculate mc value for any company if you know the values of price of particular share and number of outstanding shares.</p>
+
+    <div class="container">       
+      <div class="container2-percentoff">
+        <p class="title">Market Capitalization Calculator</p> 
+        <div class="wrapper">
+            <form id="form">
+                <div class="form-group">
+                  <label for="age">Price of Single Share :		</label>
+                  <input type="text" id="pps" required />
+                </div>
+                <div class="form-group">
+                  <label for="weight">Number of Outstanding Shares :	</label>
+                  <input type="text" aria-label="Price per share" id="eps" required />
+                </div>
+          
+      
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit">Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="height">Market Capitalization :		</label>
+                  <input type="text" aria id="pe"  />
+                </div>
+              </form>
+         
+         
+         
+        </div>
+     </div>
+<!--
+     <div class="container3-fat">
+        <p class="title-calorie">Result</p> 
+        <div class="result-container" id="result">
+
+        </div>
+        <h3 id="BMI" class="BMI"></h3>
+        <h3 id="range" class="range"></h3>
+      
+     </div>
+-->
+     
+     <div class="container6">
+      <h1 class="heading-1">What is Market capitalization?   </h1>
+      <p class="paragraph-1">Market Capitalization (Market Cap) is the most recent market value of a company’s outstanding shares. The Market Cap is equal to the current share price multiplied by the number of shares outstanding.        </p>
+
+      <h1 class="heading-2">Market capitalization formula</h1>
+      <p class="paragraph-2">The formula for Market Capitalization is defined as :         <br>
+                      <br>Market Capitalization = Total Outstanding shares * Price per share   </p>   
+
+
+      <h1 class="heading-3">How to Calculate Market capitalization</h1>
+      <p class="paragraph-3">Suppose, a company has a share price of $10 per share and total outstanding shares are $500 million.      <br>
+       <br>Then the market capitalization is :   <br>
+       <br>MC = $10 * $500 = $5 Billion
+       
+      </p>       
+
+                  <h1 class="heading-4">Usage of Market capitalization</h1>
+                  <p class="paragraph-4">There are a number of popular valuation ratios that include market capitalization that investors should look at when considering buying a stock.
+                   <br> &bull; Price-to-earnings ratio 
+                    <br>
+                    &bull; Price-to-free-cash-flow ratio
+                    <br>
+                    &bull; Price-to-book value
+                  </p>               
+
+</div>
+
+<div class="container-last">
+  <h1 class="heading-5"></h1>
+  <p class="paragraph-5"> </p>
+  
+  <h1 class="heading-5">  </h1>
+  <p class="paragraph-5"> <br>
+                                           </p>
+  </div>
+    </div> 
+</div>
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+
+    <script src="js/marketcapitalization.js"></script>
+</body>
+</html>
