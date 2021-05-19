@@ -1,0 +1,44 @@
+main{
+
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: 95px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+
+#footer{
+    background: #e1e1e1;
+
+    font-size: 23px;
+    color: #555;
+    text-align: center;
+    display: block;
+    position: absolute;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 60px;
+    background: grey;
+
+}
+
+
+#footernav {
+    text-align: center;
+}
+
+#footer a {
+    color: #444;
+}

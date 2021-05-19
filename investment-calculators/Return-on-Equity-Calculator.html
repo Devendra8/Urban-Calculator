@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dicount.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Urban Calculator</title>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Urban Calculator</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+        <a href ="/index.html" class="mr-5">Home</a>
+        <a class="mr-5 " href="/main-calculators.html">Main</a>
+        <a class="mr-5 " href="/math-calculators.html">Math</a>
+        <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+      </nav>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+
+    </div>
+ 
+  </header>
+
+  <div class="container-main">  
+      <h2 class="bmi">Return on Equity Calculator</h2>
+      <p>The Return on Equity Calculator can be used
+        to calculate ROE for any company if you know the values of Net profit and Equity size.</p>
+
+    <div class="container">       
+      <div class="container2-percentoff">
+        <p class="title">Return on Equity Calculator</p> 
+        <div class="wrapper">
+            <form id="form">
+                <div class="form-group">
+                  <label for="age">Net Profit :	</label>
+                  <input type="text" id="pps" required />
+                </div>
+                <div class="form-group">
+                  <label for="weight">Equity :		</label>
+                  <input type="text" aria-label="Price per share" id="eps" required />
+                </div>
+           
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit">Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="height">Return on Equity :		</label>
+                  <input type="text" aria id="pe"  />
+                </div>
+              </form>
+         
+         
+         
+        </div>
+     </div>
+<!--
+     <div class="container3-fat">
+        <p class="title-calorie">Result</p> 
+        <div class="result-container" id="result">
+
+        </div>
+        <h3 id="BMI" class="BMI"></h3>
+        <h3 id="range" class="range"></h3>
+      
+     </div>
+    -->
+     
+     <div class="container6">
+      <h1 class="heading-1">What is Return on equity?  </h1>
+      <p class="paragraph-1">Return on equity (ROE) may be a measure of monetary performance calculated by dividing net by shareholders' equity. Because shareholders' equity is adequate to a company’s assets minus its debt, ROE is taken into account the return on net assets.
+      </p>
+
+      <h1 class="heading-2">Return on equity formula</h1>
+      <p class="paragraph-2">ROE is expressed as a percentage and can be calculated for any company if net income and equity are both positive numbers.         <br>
+                      <br>ROE = Net Profit/Equity   </p>   
+
+
+      <h1 class="heading-3">How do you calculate return on equity?</h1>
+      <p class="paragraph-3">Suppose a company with an annual income of $1,800,000 and average shareholders' equity of $12,000,000.      <br>
+       <br> Then Return on Equity value is calculated as:  <br>
+       <br> ROE = $1800,000/$12000000 = 15%
+       
+      </p>       
+
+                  <h1 class="heading-4">Usage of Return on equity</h1>
+                  <p class="paragraph-4">
+                    &bull; Sometimes an extremely high ROE is a good thing if net income is extremely large compared to equity because a company’s performance is so strong.   <br>
+                    <br>
+                    &bull; A second issue that could cause a high ROE is excess debt. If a company has been borrowing aggressively, it can increase ROE because equity is equal to assets minus debt.
+                  </p>               
+
+</div>
+<div class="container-last">
+  <h1 class="heading-5">What is a good ROE?</h1>
+  <p class="paragraph-5">As with return on capital, a ROE is a measure of management's ability to generate income from the equity available to it. ROEs of 15–20% are generally considered good. ROE is also a factor in stock valuation, in association with other financial ratios. </p>
+  
+  <h1 class="heading-5">What is a bad return on equity?  </h1>
+  <p class="paragraph-5"> Return on equity (ROE) is measured as net income divided by shareholders' equity. When a company incurs a loss, hence no net income, return on equity is negative. ... If net income is negative, free cash flow can be used instead to gain a better understanding of the company's financial situation.
+                                           </p>
+  </div>
+    </div> 
+</div>    
+    <footer>   
+      <div id="footer">
+          <div id="footerin">
+              <div id="footernav">
+                  <a href="/about-us.html">about us</a> | 
+          <a href="/sitemap.html">sitemap</a> | 
+          <a href="/terms-of-use.html">terms of use</a> | 
+          <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+          <a href="/index.html">urbanCalculator.com</a>
+      </div>
+  </div>
+  </div>
+  </footer>
+
+    <script src="js/roe.js"></script>
+</body>
+</html>
