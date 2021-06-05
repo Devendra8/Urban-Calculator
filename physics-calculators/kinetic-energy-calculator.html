@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content=" Kinetic Energy Calculator is a simple tool that helps you to determine the energy of motion by using basic kinetic energy formula.
+    " >
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sales.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer1.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="/js/search.js"></script>
+    <title>Kinetic Energy Calculator - Urban Calculator</title>
+
+    <script src="/js/search.js"></script>
+    <script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="main-box">
+    <div class="header1">    
+    <header class="text-gray-600 body-font">
+        <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Urban Calculator</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex   ">
+            <a href ="/index.html" class="mr-5">Home</a>
+            <a class="mr-5 " href="/main-calculators.html">Main</a>
+            <a class="mr-5 " href="/math-calculators.html">Math</a>
+            <a href ="/other-Calculators.html" class="mr-5 hover:text-yellow-900">Others</a> 
+          </nav>
+          <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
+ 
+
+        </div>
+     
+      </header>
+
+    </div>
+     
+<div class="container-main"> 
+  <div class="main-content">    
+    <div class="container">      
+    
+      <h1 class="bmi">  Kinetic Energy Calculator </h1>
+      <p> Kinetic Energy Calculator is a simple tool that helps you to determine the energy of motion by using basic kinetic energy formula. 
+      </p>
+    <div class="outer">  
+      <div class="outer-box">
+       <div class="container2-ERA">
+        <p class="title">    Kinetic Energy Calculator</p> 
+        <div class="wrapper">
+            <form id="form">
+
+                  <div class="form-group">
+                    <label for="weight">  Mass :  		</label>
+                    <div class="form-loan">
+
+                    <input type="text" placeholder=" "  id="mass"/>&nbsp;&nbsp;
+                    <select id="weightterm"  required>
+                        <option id="micro" value="0.000000001" >Micrograms</option>
+                        <option id="milli" value="0.000001">Milligrams</option>
+                        <option id="grams" value="0.001">grams</option>
+                        <option id="kg" value="1" selected>Kilograms</option>
+                        <option id="meton" value="1000">Metric ton</option>
+                        <option id="grains" value="0.0000647989">grains</option>
+                        <option id="drachms" value="0.0018 ">drachms</option>
+                        <option id="ounces" value="0.0283495">ounces</option>
+                        <option id="pounds" value="0.453592">pound</option>
+                        <option id="stones" value="6.35029">stones</option>
+                        <option id="uston" value="907.185">US short tons</option>
+                        <option id="impton" value="1016.05">Imperial tons</option>
+                      </select>
+                   
+                  </div>
+                  </div>
+
+
+                <div class="form-group">
+                    <label for="age"> Velocity :  	</label>
+                    <div class="form-loan">
+
+                      <input type="text" placeholder="" id="velocity" required />&nbsp;&nbsp;
+                      <select id="velocityterm"  required>
+                        <option id="mps" value="1" selected>meters per second</option>
+                        <option id="kmps" value="3.6">kilometers per second</option>
+                        <option id="fps" value="3.28084">feet per second</option>
+                        <option id="mph" value="2.236936">miles per hour</option>
+                        <option id="knot" value="1.943844">knot</option>
+                        <option id="fpm" value="196.8504">feet per minute</option>
+      
+                      </select>
+                    </div>  
+                  </div>  
+
+
+
+
+
+                <div class="form-group-btn">
+                  <button class="btn-submit" type="submit" onclick="yes1();" >Calculate</button>
+                  <button class="btn-reset" type="reset">Clear</button>
+                </div>
+                
+              
+         <!--       <div class="form-group">
+                    <label for="age">Final Price :		</label>
+                    <input type="number" placeholder="" id="runs" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="age">Savings :		</label>
+                    <input type="number" placeholder="" id="runs" required />
+                  </div>
+             -->
+                </form>
+         
+         
+         
+        </div>
+     
+
+
+    
+
+
+     </div>
+    </div>
+    <div class="container8">
+     <div class="container9">
+      <h4 class="container9-h4">Checkout : </h4>
+      <hr size="15" width="100%" color="grey"> 
+      <ul class="container9-ul">
+        <a href="/Finance-calculators.html"><li>Finance </li></a>
+        <a href="/fitness-and-health-calculator.html"><li>Health </li></a>
+        <a href="/sales-calculators.html"><li>Sales </li></a>
+        <a href="/construction-calculators.html"><li>Construction </li></a>
+        <a href="/statistic-calculators.html"><li>Statistics </li></a>
+        <a href="/other-calculators.html"><li>Other </li></a>
+      </ul>
+    </div>
+
+    <div class="container10">
+      <h3 class="container10-h3">Available on Google Play</h3>
+      <hr size="15" width="100%" color="grey"> 
+      <p class="container10-p3">Download Urban Calculator App for your Mobile, so that all values can be calculated easily.</p>
+      </div>
+
+   </div>
+  </div>
+
+
+   
+
+  <div class="container5"  >
+    <div class="container3" id="container3" style="height: auto; display: none; ">
+      <p class="title-result"> Summary  </p> 
+        <div class="result-container" id="result">
+          <h4 id="BMI" class="BMI"><strong></strong></h4>
+     <!-- <h4 id="BMI1" class="BMI"><strong></strong></h4>-->
+     
+        </div>
+
+      <h3 id="range" class="range"></h3>
+    </div>
+
+        <div class="container6">
+   <!--     ADVERTISEMENT-->
+
+        </div>
+    </div>
+  </div> 
+
+
+
+  
+
+    <div class="container7"></div>
+  </div>
+
+
+    <div class="container4" >
+     
+    
+        <h3>  </h3>
+        <p>     </p>
+          <h3>   </h3>
+          <p> You can find more physics calculators by <a href="/physics-calculators.html" style="color: orange;"> clicking here.</a>  here.  </p>
+
+    <!--
+        <h3>   </h3>
+        <p>   </p>
+    
+        <h3>   </h3>
+        <p>   </p>
+    
+        <h3></h3>
+        <p></p>
+          
+        <h3>  </h3>
+        <p> </p>   -->
+    </div>
+
+</div>
+
+
+<div class="footer1">
+  <footer>   
+    <div id="footer">
+        <div id="footerin">
+            <div id="footernav">
+                <a href="/about-us.html">about us</a> | 
+        <a href="/sitemap.html">sitemap</a> | 
+        <a href="/terms-of-use.html">terms of use</a> | 
+        <a href="/privacy-policy.html">privacy policy</a> &nbsp;  © 2021 - 2022 
+        <a href="/index.html">urbanCalculator.com</a>
+    </div>
+</div>
+</div>
+</footer>
+</div>
+
+
+</div>
+
+  <Script>
+  
+//onchange script //  
+function yes1(that){
+  document.getElementById("container3").style.display="block";
+
+}
+
+
+
+//form //
+const form = document.getElementById("form");
+    form.addEventListener("submit", handleSubmit);
+    form.addEventListener("reset", handleReset);
+
+    function handleReset() {
+        const result1 = document.getElementById("BMI");
+        result1.innerHTML = "";
+        document.getElementById("container3").style.display = "none";
+    }  
+    
+    function handleSubmit(event) {
+     
+       event.preventDefault();
+        document.getElementById("container3").style.display = "block";
+        const mass = getinputnumbervalue("mass");
+        const velocity = getinputnumbervalue("velocity");
+        const weightterm = getSelectedValue("weightterm");
+        const velocityterm = getSelectedValue("velocityterm");
+      
+        getResult(mass, velocity, weightterm, velocityterm);
+    
+    }
+    
+    function getinputnumbervalue(id){
+    
+        return Number(document.getElementById(id).value);
+    }
+
+    function getSelectedValue(id) {
+  const select = document.getElementById(id);
+  return select.options[select.selectedIndex].value;
+}
+
+
+
+    
+    function validateForm() {
+        // TODO
+        return true;
+    }
+    
+    
+    function getResult(mass, velocity, weightterm, velocityterm){
+
+
+      const m = mass*weightterm;
+      const v = velocity*velocityterm;
+      const v2 = v*v;
+      
+      const result = 0.5*m*v2;
+        const layout = 
+    
+        `
+          
+          <div class="result-content" >
+        
+                  <h5 class="result-h2">Kinetic Energy : <strong> ${result} Joules</strong></h5><br>
+                 
+          </div>        
+          `
+
+          ;
+      
+      
+        document.getElementById("BMI").innerHTML =  layout;
+
+      }
+    
+    
+
+
+
+
+  </script>
+</body>
+</html>
